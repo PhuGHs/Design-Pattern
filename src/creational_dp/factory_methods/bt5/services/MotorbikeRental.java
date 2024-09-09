@@ -30,7 +30,7 @@ public class MotorbikeRental implements Service {
 
     @Override
     public void printServiceCalculatingProcess() {
-        System.out.println("MotorbikeRental Service Calculating Process \n");
+        System.out.println("MotorbikeRental Service Calculating Process");
         System.out.println("result = pricePerHour * numberOfHourRenting");
     }
 

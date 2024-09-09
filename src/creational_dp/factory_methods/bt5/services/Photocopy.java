@@ -14,7 +14,7 @@ public class Photocopy implements Service {
 
     @Override
     public void printServiceCalculatingProcess() {
-        System.out.println("Photocopy calculating process \n");
+        System.out.println("Photocopy calculating process");
         System.out.println("result = number of pages * unit price");
     }
 

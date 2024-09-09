@@ -14,7 +14,7 @@ public class Laundry implements Service {
 
     @Override
     public void printServiceCalculatingProcess() {
-        System.out.println("Laundry calculating process \n");
+        System.out.println("Laundry calculating process");
         System.out.println("result = unitPrice * kilogram");
     }
 

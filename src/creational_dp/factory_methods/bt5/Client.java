@@ -15,7 +15,7 @@ public class Client {
     }
 
     static void defineServices() {
-        System.out.println("Select which service you want to use: \n");
+        System.out.println("Select which service you want to use:");
         System.out.println("1. Laundry");
         System.out.println("2. Photocopy");
         System.out.println("3. Motorbike rental");
