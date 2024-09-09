@@ -1,5 +1,6 @@
 package creational_dp.factory_methods.example.buttons;
 
+//concrete product
 public class HtmlButton implements Button {
     @Override
     public void render() {
