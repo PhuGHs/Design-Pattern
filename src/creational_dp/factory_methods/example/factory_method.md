@@ -1,1 +1,0 @@
-![Adapter design pattern](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png?id=4cba0803f42517cfe8548c9bc7dc4c9b "Adapter dp")

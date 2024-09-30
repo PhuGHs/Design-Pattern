@@ -1,4 +1,0 @@
-Vẽ biểu đồ và viết chương trình quản lý mô hình tổ chức và quản trị các tổ chức như sau (Công ty TNHH, Công ty cổ phần, trường học, bệnh viện, ...)
-
-- Các tổ chức vó tên, địa chỉ, SĐT, lĩnh vực hoạt động, các phòng ban và mỗi phòng ban ồm các nhân viên và quy định chi tiết về các hoạt động và chính sách liên quan: hoạt động, lương, tuyển dụng, ...
-- Mỗi tổ chức cần có ban điều hành khác nhau như điều hành trường học là Ban giám hiệu hoặc Hội đồng quản tị (nếu trường thuộc công ty cổ phần), điều hành Công ty TNHH là ban giám đốc, điều hành công ty Cổ phần là Hội đồng quản trị, .... Mỗi loại ban đều hành có những cách khác nhau trong việc xây dựng các chính sách: tổ chức hoạt động, chính sách lương, chính sách tuyển dụng.
