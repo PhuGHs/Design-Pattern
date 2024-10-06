@@ -1,4 +1,4 @@
-package structural_dp.composite;
+package structural_dp.composite.example_forpresentation;
 
 //Leaf
 public class Book extends Document {
