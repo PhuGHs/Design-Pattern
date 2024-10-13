@@ -1,0 +1,192 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "structural_dp.decorator.decorator2.ILinh",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_528037947 { 
+   	label=decorator
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_573910294 { 
+   	label=decorator2
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   ILinh855077290[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(I)ILinh</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getItem()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#F1E5FD"
+];
+
+KyNang855077290[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)KyNang</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   kyNang: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getItem()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+LinhCoBan855077290[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)LinhCoBan</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   quanTrangs: List&lt;String&gt; [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getItem()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+LinhDecorator855077290[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)LinhDecorator</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   linh: ILinh [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getItem()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+QuanHam855077290[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)QuanHam</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   quanHam: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getItem()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+VuKhi855077290[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)VuKhi</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   vuKhi: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getItem()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+ILinh855077290 -> LinhCoBan855077290[arrowhead=none, arrowtail=empty, dir=both];
+ILinh855077290 -> LinhDecorator855077290[arrowhead=none, arrowtail=empty, dir=both];
+LinhDecorator855077290 -> ILinh855077290[label="linh
+[0..1]"];
+LinhDecorator855077290 -> KyNang855077290[arrowhead=none, arrowtail=empty, dir=both];
+LinhDecorator855077290 -> QuanHam855077290[arrowhead=none, arrowtail=empty, dir=both];
+LinhDecorator855077290 -> VuKhi855077290[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml
