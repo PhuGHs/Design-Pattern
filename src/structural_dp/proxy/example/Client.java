@@ -1,4 +1,4 @@
-package structural_dp.proxy;
+package structural_dp.proxy.example;
 
 //Client
 public class Client {
