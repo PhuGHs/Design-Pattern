@@ -5,14 +5,23 @@ import java.util.List;
 
 public class Client {
     public static void main(String[] args) {
-        List<Player> players = new ArrayList<Player>();
+        Team manUtd = PlayerFactory.getTeam("Manchester United", "mufc.png", "Red");
 
-        Player player = new Player("Le Van Phu", "248", "LW");
-        Player secondPlayer = new Player("Player A", "10", "CM");
-        Team team = new Team("Manchester United", "mu.png", "Red");
-        GameContext gameContext = new GameContext(player, team);
-        GameContext secondGameContext = new GameContext(secondPlayer, team);
-        gameContext.createPlayer().getPlayer();
-        secondGameContext.createPlayer().getPlayer();
+        Player player1 = new Player("Bruno Fernandes", "8", "Midfielder", manUtd);
+
+        Player player2 = new Player("Marcus Rashford", "10", "Forward",manUtd
+        );
+
+        Team chelsea = PlayerFactory.getTeam("Chelsea", "cfc.png", "Blue");
+
+        Player player3 = new Player("Kai Havertz", "29", "Forward", chelsea);
+
+        Player player4 = new Player("Harry Maguire", "5", "Defender", PlayerFactory.getTeam("Manchester United", "mufc.png", "Red"));
+
+        player1.displayInfo();
+        player2.displayInfo();
+        player3.displayInfo();
+        player4.displayInfo();
+        System.out.println("Number of teams: " + PlayerFactory.getSize());
     }
 }

@@ -15,4 +15,8 @@ public class PlayerFactory {
         }
         return result;
     }
+
+    public static int getSize() {
+        return teams.size();
+    }
 }
